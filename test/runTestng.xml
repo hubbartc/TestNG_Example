@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+	<parameter name="env" value="ukprod" />
+
+	<parameter name="os" value="windows7" />
+	<parameter name="browserType" value="chrome" />
+	<!-- OPTIONAL PARAMETERS -->
+	<!-- 
+	<parameter name="browserVersion" value="11" />
+	<parameter name="platform" value="WINDOWS_CHROME" /> 
+	-->
+
+	<test name="Test1">
+		<classes>
+			<parameter name="account-type" value="gmail" />
+			<parameter name="username" value="botBuilder001" />
+			<parameter name="password" value="changeMe" />
+			<parameter name="countryCode" value="gb" />
+
+			<class name="com.test.classes.NewTest" />
+		</classes>
+	</test>
+
+</suite>
